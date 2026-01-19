@@ -1,57 +1,54 @@
 # TutorDesk
 
-A lightweight macOS scheduling app for tutors to **avoid time conflicts** and manage students/classes efficiently.
+TutorDesk is a lightweight macOS app for tutoring workflow and schedule planning. It helps you organize students, manage enrollment “terms” (e.g., Spring/Winter), and reduce time conflicts in course scheduling.
 
-> Status: MVP (actively improving)
+> **Platform**: macOS only (built with Xcode / SwiftUI).  
+> **Windows/Linux**: not supported.
 
 ---
 
 ## Features
 
-- ✅ Student management (create / edit / delete)
-- ✅ Course enrollments (e.g., Spring / Winter sessions)
-- ✅ Schedule planning to reduce time conflicts
-- ✅ Clean macOS-native UI (SwiftUI)
+- Student management (create, edit, delete)
+- Enrollment / term templates (e.g., Spring 2026, Winter break)
+- Course scheduling helpers to reduce time conflicts
+- Local-first data (no server required)
 
 ---
 
-## Download & Install (Recommended)
+## Requirements
 
-### Option A — Install the App (.app)
-1. Go to **Releases** on the right side of this GitHub page.
-2. Download the latest `TutorDesk.zip` (or `.dmg` if provided).
-3. Unzip, then drag **TutorDesk.app** into **Applications**.
-4. Open it.
-
-### macOS security prompt (first launch)
-If macOS blocks the app:
-- **Right click** `TutorDesk.app` → **Open** → **Open**
-- Or: **System Settings** → **Privacy & Security** → **Open Anyway**
-
-> Tip: Moving the app into **Applications** reduces permission issues.
+- macOS 13.0 or later (recommended)
+- Apple Silicon or Intel Mac
 
 ---
 
-## Update
+## Download & Install (macOS)
 
-### Manual update (current)
-1. Download the newest release from **Releases**
-2. Replace the old `TutorDesk.app` in **Applications**
+1. Go to **Releases** and download the latest `TutorDesk.zip`.
+2. Unzip it to get `TutorDesk.app`.
+3. Move `TutorDesk.app` to `/Applications` (recommended).
+4. Open the app.
 
-### Planned (future)
-- Sparkle auto-update support (so users can update inside the app)
+### If macOS blocks the app (“can’t be opened”)
+
+Because the app may be **unsigned / not notarized**, macOS Gatekeeper may block it.
+
+- **Option A (recommended for users):**
+  1. Right-click `TutorDesk.app`
+  2. Choose **Open**
+  3. Confirm **Open** again
+
+- **Option B: System Settings**
+  1. Open **System Settings → Privacy & Security**
+  2. Find the warning about TutorDesk
+  3. Click **Open Anyway**
 
 ---
 
-## Build From Source
+## Build from Source (Developers)
 
-### Requirements
-- macOS 13+
-- Xcode 15+ (recommended)
-- Swift 5.9+
-
-### Steps
-1. Clone this repo:
+1. Clone the repository:
    ```bash
    git clone https://github.com/CassianVale/TutorDesk.git
    cd TutorDesk
